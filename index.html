@@ -1,9 +1,16 @@
+<!--
+ Author: Min Seo
+ Project: FreeCodeCamps' Front End Development Project
+ Goal: Build a Tribute Page
+-->
+
 <div class="container-fluid">
   <h1 class="headerSize text-center">Tribute to Louis Armstrong
   </h1>
   <h2 class="headerSize text-center">Father of Jazz
   </h2>
 
+  <!--Use alt just in case the URL provided does not work -->
   <img class="img-responsive imageBorder" src="https://www.louisarmstronghouse.org/wp-content/uploads/2017/01/biography-2.png" alt="Louis Armstrong">
 </div>
 
@@ -18,6 +25,7 @@
   
   
 <p>Some interesting facts about Louis Armstrong: 
+  <!-- Unordered list -->
   <ul>
     <li>Born in 1901 in New Orleans, LA, Armstrong first learned how to play cornet.</li>
     <li>He joined several bands before moving into Chicago, where he played with King Oliver and his Creole Jazz Band.</li>
@@ -25,13 +33,19 @@
     <li>Although Armstrong was criticized for his race, for his comments on civil rights, personal life issues, he left a strong legacy as an African American jazz musician that we still remember today.</li>
   </ul>
 </p>
+
 <form action="/action-page">
   <select name="Songs">
+    <!-- Create a dropdown menu -->
     <option value="0">What a Wonderful World</option>
     <option value="1">La vie en rose</option>
     <option value="2">Dream a Little Dream of Me</option>
   </select>
+  
+  <!-- When 'submit' button is clicked, go to songSubmitted function for further action -->
   <button onclick="songSubmitted()" type="submit">Submit</button>
+  
+  <!-- use this space to include output from songSubmitted function -->
   <p id="songSelection"></p>
 </form>
 
@@ -47,9 +61,9 @@
 <p>
   Please like this page if you read it!
   <button class="btn btn-primary" onclick="likeButton()">Like</button>
+  <!-- When a user clicks 'like' button, return a thank you message-->
 <p id="button"></p>
 </p>
-
 
 
 </div>
