@@ -4,12 +4,6 @@
 * Goal: Build a Tribute Page
 */
 
-body {
-  font-family: Monospace;
-  background-color: #ffdab9;
-  color: #0000a0;
-}
-
 .headerSize {
   font-size: 32px;
 }
@@ -23,8 +17,5 @@ body {
   border-color: gray;
   border-size: 3px;
   border-radius: 15%;
+  margin: auto;
 }
-
-
-
-

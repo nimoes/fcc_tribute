@@ -5,16 +5,21 @@
 -->
 
 <div class="container-fluid">
+  <!-- Add Bootstrap -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  
+  <!-- Add Font Awesome Icons -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  
   <h1 class="headerSize text-center">Tribute to Louis Armstrong
   </h1>
   <h2 class="headerSize text-center">Father of Jazz
   </h2>
 
   <!--Use alt just in case the URL provided does not work -->
+  <br>
   <img class="img-responsive imageBorder" src="https://www.louisarmstronghouse.org/wp-content/uploads/2017/01/biography-2.png" alt="Louis Armstrong">
-</div>
-
-<div>
+  <br><br>
 <p>
   I am embarrassed to say that I never listened to Louis Armstrong until my sophomore year, when my college roommate played <i>La vie en rose</i> during our study in Jamestown Hall. I am not a huge music person, and furthermore, I am definitely not a big jazz person either. To my shallow understanding, jazz involves several clashing of several instruments or sounds, and because of its complex, dynamic nature, I always shied away from it and listened to something more...predictable and tunes that I could follow along. But something about Armstrong's <i>La vie en rose</i> (which means "Life in Rosy Hues") was different. Rather, it was a good introduction for someone like me to listen to, and start giving more appreciation towards jazz.
 </p>
@@ -34,8 +39,8 @@
   </ul>
 </p>
 
-<form action="/action-page">
-  <select name="Songs">
+
+  <select name="Songs" id="song-dropdown">
     <!-- Create a dropdown menu -->
     <option value="0">What a Wonderful World</option>
     <option value="1">La vie en rose</option>
@@ -46,8 +51,11 @@
   <button onclick="songSubmitted()" type="submit">Submit</button>
   
   <!-- use this space to include output from songSubmitted function -->
-  <p id="songSelection"></p>
-</form>
+  <p id="songSummary">
+    <br>
+    <br>
+    <br>
+  </p>
 
 <h3>Credits
 </h3>
@@ -58,11 +66,11 @@
   For a full biography of Louis Armstrong, visit <a href="https://www.louisarmstronghouse.org/biography/">this website!</a>
 </p>
 
-<p>
+<p class="bodySize">
   Please like this page if you read it!
-  <button class="btn btn-primary" onclick="likeButton()">Like</button>
+  <button class="btn btn-primary" onclick="likeButton()">Like <i class="fa fa-thumbs-up"></i></button>
   <!-- When a user clicks 'like' button, return a thank you message-->
-<p id="button"></p>
+<p class="bodySize" id="button"></p>
 </p>
 
 
